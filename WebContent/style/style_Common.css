@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+@import url(/source/style_Reset.css);
+
+div#wrap {
+	border: 1px solid #000;
+}
+
+/* nav#gnb  시작*/
+nav#gnb>ul#gnbUL {
+	margin: 30px 0;
+	justify-content: center;
+}
+
+nav#gnb>ul#gnbUL>li.gnbLi {
+	border: 1px solid #000;
+	border-right-style: none;
+	width: 210px;
+	text-align: center;
+	font-size: 22px;
+	padding: 5px 5px;
+}
+
+nav#gnb>ul#gnbUL>li.gnbLi:last-child {
+	border-right: 1px solid #000;
+}
+
+#gnb>ul#gnbUL>li.gnbLi>a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+/* nav#gnb  끝*/
+
+/* main#main 시작 */
+main#main {
+	width: 840px;
+	margin: 10px auto;
+}
+
+main#main>div#main_header>div#main_info {
+	padding: 7px 10px;
+	justify-content: space-between;
+}
+
+#main>div#main_header>ul#main_content_title {
+	background-color: #e5f3ff;
+	border-bottom: 2px solid #ddd;
+}
+
+#main>div#main_header>ul#main_content_title>li.title {
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	padding: 7px 0;
+}
+
+ul#main_content_title>li:nth-child(1), div.content_no {
+	width: 70px;
+	text-align: center;
+}
+
+ul#main_content_title>li:nth-child(2), div.content_title {
+	flex: 1;
+}
+
+ul#main_content_title>li:nth-child(3), div.content_name {
+	width: 130px;
+	text-align: center;
+}
+
+ul#main_content_title>li:nth-child(4), div.content_date {
+	width: 160px;
+	text-align: center;
+}
+
+ul#main_content_title>li:nth-child(5), div.content_view {
+	width: 90px;
+	text-align: center;
+}
+
+div.main_content>div {
+	padding: 15px 5px;
+	border-bottom: 2px solid #ddd;
+	font-size: 17px;
+}
+
+div#main_footer {
+	margin: 10px 0 0 10px;
+	justify-content: space-between;
+}
+
+div#main_footer>div#page_controller>div {
+	height: 35px;
+	line-height: 35px;
+	width: 30px;
+	text-align: center;
+}
+
+div#main_footer>div#page_controller>div>a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+div#main_footer>div#page_controller>div.pageNo:hover {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+div#page_controller>div:first-child, div#page_controller>div:last-child
+	{
+	cursor: pointer;
+	font-size: 12px;
+}
+
+div#main_footer>div#search {
+	line-height: 40px;
+}
+
+div#main_footer>div#search>select#selectBox {
+	padding: 4px 4px;
+	cursor: pointer;
+}
+
+div#main_footer>div#search>select#selectBox>option {
+	text-align: left;
+}
+
+div#main_footer>div#search>input#search_input {
+	height: 26px;
+	width: 200px;
+	outline: none;
+	border: 1px solid #777;
+	border-radius: 2px;
+	line-height: 22px;
+	transform: translateY(-1px);
+	margin: 0 3px;
+	padding-left: 4px;
+}
+
+div#main_footer>div#search>button#btn {
+	height: 26px;
+	font-weight: bold;
+	padding: 1px 4px;
+	transform: translateY(-1px);
+	margin-right: 20px;
+}
+/* main#main 끝 */
+
+/* jQuery 용 CSS 시작 */
+
+/* 현재 페이지 번호에 강조 및 배경색*/
+div.currentPage {
+	font-weight: bold;
+	background-color: #f3f3f3;
+}
+
+/* 상황에 맞게 보이거나 보이지 않도록 */
+div.notView {
+	display: none;
+}
+
+div.view {
+	display: block;
+}
+/* jQuery 용 CSS 끝 */
